@@ -86,4 +86,5 @@ function staticFolder() {
   );
 }
 
-exports.default = series(styles, html, images, staticFolder, scripts, serve);
+exports.build = series(styles, html, images, staticFolder, scripts);
+exports.default = series(exports.build, serve);
