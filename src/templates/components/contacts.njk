@@ -1,0 +1,20 @@
+<div class="{{ contactsClass | default('') }} contacts">
+	<div class="contacts__container container">
+		<div class="contacts__list">
+			{% for item in contacts %}
+				<div class="contacts__item contact">
+					<i class="fa {{ item.icon }} contact__icon {% if loop.last %} contact__icon--sm {% endif %}" aria-hidden="true"></i>
+					<div class="contact__content">
+						<span class="contact__label">{{ item.label }}</span>
+						<span class="contact__value">
+							<a href="{{ item.link }}" class="contact__link">{{ item.value }}</a>
+						</span>
+					</div>
+				</div>
+				{% if not loop.last %}
+					<div class="contacts__divider"></div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<section class="{{ presentationClass | default('') }} presentation container">
+	<div class="presentation__cover">
+		<img src="images/item-mask.png" class="presentation__image" alt="">
+	</div>
+	<div class="presentation__content">
+		<h2 class="presentation__title">{{ presentation.title }}</h2>
+		<div class="presentation__paragraphs">
+			{% for paragraph in presentation.paragraphs %}
+				<p class="presentation__text">{{ paragraph.text }}</p>
+			{% endfor %}
+		</div>
+		<ul class="presentation__list presentation-list">
+			{% for feature in presentation.features %}
+				<li class="presentation-list__item">
+					<div class="presentation-list__icon">
+						<i class="fa {{ feature.icon }} fa-lg" aria-hidden="true"></i>
+					</div>
+					<div>
+						<h3 class="presentation-list__title">{{ feature.title }}</h3>
+						<p class="presentation-list__desc">{{ feature.desc }}</p>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

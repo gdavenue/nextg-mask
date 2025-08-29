@@ -1,0 +1,41 @@
+<footer id="colophon" class="footer">
+	<div class="footer__container container">
+		<div class="footer__info">
+			<div class="footer__logo">
+				<a href="/"><img src="images/logo.png" class="logo" alt=""></a>
+			</div>
+			<p class="footer__desc">{{ footer.desc }}</p>
+		</div>
+		<div class="footer__menus">
+			<nav class="footer__nav" aria-label="Footer Menu">
+				<div class="footer__headline">{{ footer.menu.name }}</div>
+				<ul class="footer-menu">
+					{% for item in menu %}
+						<li class="footer-menu__item">
+							<a href="{{ item.link }}" class="footer-menu__link">{{ item.name }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<nav class="footer__social footer-social">
+				<div class="footer__headline">{{ footer.cta }}</div>
+				<div class="footer-social__container">
+					<div class="footer-social__decor footer-social-decor">
+						<div class="footer-social-decor__item footer-social-decor__item--top"></div>
+						<div class="footer-social-decor__item footer-social-decor__item--bottom"></div>
+					</div>
+					<ul class="footer-social__menu footer-menu">
+						{% for item in socials %}
+							<li class="footer-menu__item">
+								<a href="{{ item.link }}" class="footer-menu__link">{{ item.name }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="footer__copyright">
+		<small>{{ footer.copyright }}</small>
+	</div>
+</footer>

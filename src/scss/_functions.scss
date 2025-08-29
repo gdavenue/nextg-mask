@@ -1,0 +1,11 @@
+@use 'variables/index' as vars;
+@use 'sass:math';
+@use 'sass:map';
+
+@function toRem($px) {
+  @return math.div($px, vars.$root-font-size) * 1rem;
+}
+
+@function respond($breakpoint) {
+  @return map.get(vars.$breakpoints, $breakpoint);
+}

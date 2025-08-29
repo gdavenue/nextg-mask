@@ -1,0 +1,48 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.button {
+  display: inline-block;
+  font-family: vars.$font-accent;
+  font-weight: 500;
+  font-size: func.toRem(14);
+  padding: func.toRem(12) func.toRem(24);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+
+  &--primary {
+    background: vars.$color-btn-primary;
+    color: vars.$color-light;
+
+    &:hover {
+      background-color: vars.$color-btn-primary-hover;
+    }
+  }
+
+  &--outline-accent {
+    background-color: transparent;
+    border: 1px solid vars.$color-accent;
+    color: vars.$color-accent;
+
+    &:hover {
+      background-color: vars.$color-accent;
+      color: vars.$color-light;
+    }
+  }
+  
+  &--outline-primary {
+    background-color: transparent;
+    border: 1px solid vars.$color-bg-primary;
+    color: vars.$color-bg-primary;
+
+    &:hover {
+      background-color: vars.$color-bg-primary;
+      color: vars.$color-light;
+    }
+  }
+
+  &--shadow-primary {
+    box-shadow: 0 10px 15px rgba(vars.$color-shadow-primary, 0.19);
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "menu": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "About",
+      "link": "#"
+    },
+    {
+      "name": "Product",
+      "link": "#"
+    },
+    {
+      "name": "Contact",
+      "link": "#"
+    },
+    {
+      "name": "History",
+      "link": "#"
+    }
+  ],
+  "socials": [
+    {
+      "name": "Facebook",
+      "link": "#"
+    },
+    {
+      "name": "Twitter",
+      "link": "#"
+    },
+    {
+      "name": "Google +",
+      "link": "#"
+    },
+    {
+      "name": "YouTube",
+      "link": "#"
+    },
+    {
+      "name": "Linkedin",
+      "link": "#"
+    }
+  ],
+  "hero": {
+    "badge": "3M N95 masks",
+    "title": "Protective Face Masks",
+    "desc": "We offer the fast delivery wholesale selection of N95 masks and surgical masks, featuring FDA-approved quality and 2 – 5 days delivery, our wholesale face masks are ideal for influenza or novel coronavirus prevention.",
+    "buttons": {
+      "primary": { "text": "Shop now", "link": "#" },
+      "secondary": { "text": "Learn more", "link": "#" }
+    }
+  },
+  "features": [
+    {
+      "title": "Full-Service Shipping",
+      "desc": "From picking to custom-crating to domestic and international shipping, we handle it all for you.",
+      "icon": "box"
+    },
+    {
+      "title": "Multi-Point Inspection",
+      "desc": "From picking to custom-crating to domestic and international shipping, we handle it all for you.",
+      "icon": "checked"
+    },
+    {
+      "title": "Professional Product Support",
+      "desc": "If you have any questions about the equipment, our product specialists are here to help.",
+      "icon": "operator"
+    },
+    {
+      "title": "Secure and Easy Payment Methods",
+      "desc": "Pay your way, whether by credit card, PayPal or the redemption of earned credits.",
+      "icon": "credit-card"
+    }
+  ],
+  "about": [
+    {
+      "title": "N95 Respirators",
+      "paragraphs": [
+        {
+          "text": "The <strong>N95 mask</strong> is a form of respiratory protective wear worn over the nose and mouth to help minimise the chance of inhaling airborne particles like viruses and other germs. It is a disposable mask made from synthetic polymer fibres produced in a highly specialised process called melt blowing. During this process, the inner layer of the N95 mask is created which forms the filtration layer capable of filtering out at <strong>least 95%</strong> of airborne particles when worn correctly."
+        },
+        {
+          "text": "During outbreaks of respiratory illnesses and during periods of intense air pollution, wearing <strong>N95 masks</strong> has been shown to help reduce the inhalation of compromised air, filtering out nasty pathogens which lead to illness or which can aggravate existing respiratory problems. Maintaining clear and unhindered respiration is vitally important for remaining fit and healthy and people with pre-existing conditions or respiratory fragility can particularly benefit from wearing face masks while they are out in public and unable to control the breathing environments that they find themselves in."
+        }
+      ],
+      "image": "about-doctor"
+    },
+    {
+      "title": "N95 Respirators In Industrial And Health Care Settings",
+      "paragraphs": [
+        {
+          "text": "Most <strong>N95 respirators</strong> are manufactured for use in construction and other industrial type jobs that expose workers to dust and small particles. They are regulated by the National Personal Protective Technology Laboratory (NPPTL) in the National Institute for Occupational Safety and Health (NIOSH), which is part of the Centers for Disease Control and Prevention (CDC)."
+        },
+        {
+          "text": "However, some N95 respirators are intended for use in a health care setting. Specifically, single-use, disposable respiratory protective devices used and worn by health care personnel during procedures to protect both the patient and health care personnel from the transfer of microorganisms, body fluids, and particulate material. These surgical N95 respirators are class II devices regulated by the FDA, under 21 CFR 878.4040, and CDC NIOSH under 42 CFR Part 84."
+        }
+      ],
+      "image": "about-painting"
+    }
+  ],
+  "summary": {
+    "primary": {
+      "text": "Given the praised reputation and reliable quality within the industry, we have also established preliminary business agreements with some hospitals, local governments and medical institutions in Guangdong Province."
+    },
+    "col": {
+      "primary": {
+        "text": "After years of development, Health Pro has reached stable long-term cooperation with many hospitals and medical institutions in Hong Kong."
+      },
+      "secondary": {
+        "text": "We are keenly looking forward to expand our market in Mainland China and overseas in the future, as we have strong beliefs in our products."
+      }
+    },
+    "contacts": {
+      "title": "Proudly Made in Hong Kong",
+      "desc": "Our factory is located in Hong Kong. Equipped with machines and assembly line of the best quality on the market to ensure quality control.",
+      "cta": "Learn more",
+      "label": "Contact us",
+      "phone": "+1 123 444 5678"
+    }
+  },
+  "partners": {
+    "title": "Our Lab Certification",
+    "items": [
+      {
+        "logo": "fda"
+      },
+      {
+        "logo": "nelson"
+      },
+      {
+        "logo": "cnas"
+      }
+    ]
+  },
+  "presentation": {
+    "title": "Reasons To Choose Our Products",
+    "paragraphs": [
+      {
+        "text": "All products of Health Pro have obtained the certifications issued by national specialized agencies and testing laboratories."
+      },
+      {
+        "text": "They have also passed the quality inspection of several international famous testing institutions. We have absolute confidence that every product of Health Pro is a of the top quality."
+      }
+    ],
+    "features": [
+      {
+        "title": "Industry leader",
+        "desc": "If you have any questions about the equipment, our product specialists are here to help, specialists are here.",
+        "icon": "fa-trophy"
+      },
+      {
+        "title": "Innovation 3 led development",
+        "desc": "If you have any questions about the equipment, our product specialists are here to help.",
+        "icon": "fa-bar-chart"
+      },
+      {
+        "title": "To create a safer tomorrow for all",
+        "desc": "If you have any questions about the equipment, our product specialists are here to help.",
+        "icon": "fa-shield"
+      },
+      {
+        "title": "To protect and to improve living quality for all",
+        "desc": "If you have any questions about the equipment, our product specialists are here to help.",
+        "icon": "fa-users"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "text": "Duis vitae luctus enim. Sed ac venenatis dui. Donec non sapien imperdiet, accumsan lacus ac, mattis tortor. Aliquam erat volutpat. Praesent feugiat urna sed ex suscipit eleifend. Morbi dignissim erat turpis, sed laoreet lorem pulvinar eget. Sed vitae neque.",
+      "name": "Maria Eve",
+      "role": "Lawywer",
+      "avatar": "maria-eve",
+      "icon": "fa-twitter"
+    },
+    {
+      "text": "Aenean pulvinar ante massa, sit amet cursus nunc consequat at. Aenean pellentesque leo eget mi hendrerit aliquam. Nullam in dictum ipsum. Quisque dictum, diam sit amet hendrerit rutrum, neque ligula porta arcu, et commodo augue sapien ac mauris. Nunc elit enim.",
+      "name": "Liam Bower",
+      "role": "Mechanic",
+      "avatar": "liam-bower",
+      "icon": "fa-google-plus"
+    },
+    {
+      "text": "Aliquam erat volutpat. Praesent in arcu eu massa tristique vulputate ac vel felis. Morbi aliquam commodo molestie. Sed nec est porttitor, consequat dui quis, porta dolor. Praesent non ullamcorper mauris, vel sodales nisi. Donec placerat bibendum augue.",
+      "name": "Nicky",
+      "role": "Dancer",
+      "avatar": "nicky-dancer",
+      "icon": "fa-facebook-official"
+    }
+  ],
+  "cta": {
+    "title": "Get One Step Ahead Of Disease",
+    "desc": "Imperdiet aliquet est vel nulla turpis eu consequat ullamcorper a egestas suspendisse faucibus eu velit, phasellus pulvinar lorem et libero et tortor, sapien nulla.",
+    "button": {
+      "text": "Shop now"
+    }
+  },
+  "contacts": [
+    {
+      "label": "Address",
+      "value": "123 5th Avenue, New York, US",
+      "link": "geo:40.7128,-74.0060",
+      "icon": "fa-map-marker"
+    },
+    {
+      "label": "Call Us",
+      "value": "+1 123 456 7890",
+      "link": "tel:+11234567890",
+      "icon": "fa-phone fa-flip-horizontal"
+    },
+    {
+      "label": "Email Us",
+      "value": "info@example.com",
+      "link": "mailto:info@example.com",
+      "icon": "fa-envelope"
+    }
+  ],
+  "footer": {
+    "copyright": "Copyright © 2025 N95",
+    "cta": "Follow Us",
+    "desc": "Our team is led by several chief engineers composed of a large numver of researchers absorbed in their work in our comprehensive laboratory, which is also renowned medical equipment testing center in Hong Kong.",
+    "menu": {
+      "name": "Company"
+    }
+  }
+}

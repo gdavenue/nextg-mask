@@ -1,0 +1,28 @@
+<div class="{{ testimonialsClass | default('') }} testimonials container">
+	{% for item in testimonials %}
+		<blockquote class="testimonial">
+			<header class="testimonial__header">
+				<div class="testimonial__rating testimonial-rating">
+					{% for i in range(5) %}
+						<i class="fa fa-star testimonial-rating__icon" aria-hidden="true"></i>
+					{% endfor %}
+				</div>
+				<div class="testimonial__brand testimonial-brand">
+					<i class="fa {{ item.icon }} fa-2x testimonial-brand__icon" aria-hidden="true"></i>
+				</div>
+			</header>
+			<div class="testimonial__content">
+				<p class="testimonial__text">{{ item.text }}</p>
+			</div>
+			<footer class="testimonial__footer">
+				<div class="testimonial__avatar">
+					<img src="images/avatars/{{ item.avatar }}.jpg" alt="Автор" class="testimonial__avatar">
+				</div>
+				<div class="testimonial__author testimonial-author">
+					<cite class="testimonial-author__name">{{ item.name }}</cite>
+					<span class="testimonial-author__role">{{ item.role }}</span>
+				</div>
+			</footer>
+		</blockquote>
+	{% endfor %}
+</div>

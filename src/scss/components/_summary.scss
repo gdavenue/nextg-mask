@@ -1,0 +1,187 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.summary {
+  position: relative;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: func.respond(md)) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: func.toRem(-1300);
+    left: 0;
+    width: 100%;
+    height: 1614px;
+    background-color: vars.$color-bg-page;
+    border-bottom-left-radius: func.toRem(120);
+  }
+
+  &__col--image {
+    position: relative;
+    background-image: url('../images/summary-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    min-height: func.toRem(400);
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: func.toRem(15);
+    line-height: func.toRem(24);
+    background-color: vars.$color-bg-primary;
+    color: vars.$color-light;
+    padding: func.toRem(60) func.toRem(30) func.toRem(80);
+    width: func.toRem(285);
+
+    @media (max-width: func.respond(md)) {
+      width: 50%;
+    }
+
+    @media (max-width: func.respond(sm)) {
+      width: 100%;
+      padding: func.toRem(20) func.toRem(20) func.toRem(30);
+      background-color: rgba(vars.$color-bg-primary, 0.8);
+    }
+  }
+
+  &__content {
+    line-height: func.toRem(24);
+    padding: func.toRem(80) func.toRem(30) func.toRem(132);
+    background-color: vars.$color-light;
+    font-size: func.toRem(15);
+
+    @media (max-width: func.respond(sm)) {
+      padding: func.toRem(20) func.toRem(20) func.toRem(30);
+    }
+
+    &--primary {
+      background-color: vars.$color-bg-primary;
+      color: vars.$color-light;
+      border-top-right-radius: func.toRem(16);
+
+      @media (max-width: func.respond(md)) {
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+
+  &__row--2cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: func.respond(sm)) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__col--content {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  &__row--full {
+    display: grid;
+    gap: func.toRem(12);
+    background-color: vars.$color-accent;
+    padding: func.toRem(45) func.toRem(38) func.toRem(46);
+    border-bottom-right-radius: func.toRem(16);
+    
+    @media (max-width: func.respond(md)) {
+      border-bottom-right-radius: 0px;
+    }
+
+    @media (max-width: func.respond(sm)) {
+      padding: func.toRem(20) func.toRem(20);
+    }
+
+  }
+
+  &__title {
+    font-size: func.toRem(20);
+    font-family: vars.$font-accent;
+    font-weight: 700;
+    color: vars.$color-text-dark;
+    margin-bottom: func.toRem(-8);
+  }
+
+  &__desc {
+    font-size: func.toRem(15);
+    line-height: func.toRem(24);
+    color: vars.$color-text-dark;
+    margin-bottom: func.toRem(18);
+  }
+}
+
+.summary-contact {
+  display: flex;
+  column-gap: func.toRem(40);
+  align-items: center;
+
+  @media (max-width: func.respond(sm)) {
+    flex-direction: column;
+    row-gap: func.toRem(32);
+    align-items: flex-start;
+  }
+
+  &__cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: vars.$color-bg-primary;
+    width: func.toRem(46);
+    height: func.toRem(46);
+    color: vars.$color-light;
+  }
+
+  &__divider {
+    background-color: vars.$color-light;
+    width: 1px;
+    height: func.toRem(46);
+
+    @media (max-width: func.respond(sm)) {
+      width: func.toRem(46);
+      height: 1px;
+    }
+  }
+
+  &__label {
+    color: vars.$color-text-primary;
+    font-size: func.toRem(14);
+    font-weight: 600;
+  }
+
+  &__value {
+    color: vars.$color-text-black;
+    font-size: func.toRem(24);
+    font-weight: 600;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: func.toRem(13);
+
+    @media (max-width: func.respond(xs)) {
+      flex-direction: column;
+      row-gap: func.toRem(13);
+      align-items: flex-start;
+    }
+  }
+}

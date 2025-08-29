@@ -1,0 +1,15 @@
+<section class="{{ featuresClass | default('') }} features container">
+	<ul class="features__list">
+		{% for item in features %}
+			<li class="features__item feature-item {% if loop.first %} feature-item--wide {% endif %} {% if loop.last %} feature-item--wide {% endif %}">
+				<div class="feature-item__cover">
+					<img src="./images/icons/{{item.icon}}.svg" alt="">
+				</div>
+				<div>
+					<h2 class="feature-item__title">{{ item.title }}</h2>
+					<p class="feature-item__desc">{{ item.desc }}</p>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,20 @@
+<nav class="mobile-menu">
+	<header class="mobile-menu__header">
+		<div class="mobile-menu__logo">
+			<a href="/"><img src="images/logo.png" class="logo" alt="Logo"></a>
+		</div>
+		<div class="mobile-menu__close">
+			<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+		</div>
+	</header>
+	<ul class="mobile-menu__list">
+		{% for item in menu %}
+			<li class="mobile-menu__item">
+				<a href="{{ item.link }}" class="mobile-menu__link">{{ item.name }}</a>
+			</li>
+		{% endfor %}
+		<li class="mobile-menu__item">
+			<a href="#contacts" class="button button--primary">Contact us</a>
+		</li>
+	</ul>
+</nav>

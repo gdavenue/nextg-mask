@@ -1,0 +1,14 @@
+<section class="{{ heroClass | default('') }} hero container">
+	<div class="hero__container">
+		<div class="hero__badge">{{ hero.badge }}</div>
+		<h1 class="hero__title">{{ hero.title }}</h1>
+		<p class="hero__desc">{{ hero.desc }}</p>
+		<div class="hero__actions">
+			<a href="{{ hero.buttons.primary.link }}" class="button button--primary button--shadow-primary">{{ hero.buttons.primary.text }}</a>
+			<a href="{{ hero.buttons.secondary.link }}" class="button button--outline-accent">{{ hero.buttons.secondary.text }}</a>
+		</div>
+	</div>
+	<div class="hero__cover">
+		<img src="images/hero-cover.png" class="hero__image" alt="">
+	</div>
+</section>

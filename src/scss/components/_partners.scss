@@ -1,0 +1,55 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.partners {
+  display: flex;
+  column-gap: func.toRem(87);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: func.respond(sm)) {
+    flex-direction: column;
+    row-gap: func.toRem(40);
+  }
+
+  &__title {
+    font-size: func.toRem(15);
+    line-height: func.toRem(24);
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: func.toRem(16);
+
+    @media (max-width: func.respond(xs)) {
+      word-break: break-word;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      background-color: vars.$color-accent;
+      width: func.toRem(146);
+      height: func.toRem(1);
+
+      @media (max-width: func.respond(xs)) {
+        width: func.toRem(0);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: func.toRem(100);
+
+    @media (max-width: func.respond(md)) {
+      column-gap: func.toRem(40);
+    }
+
+    @media (max-width: func.respond(sm)) {
+      flex-direction: column;
+      row-gap: func.toRem(20);
+    }
+  }
+}

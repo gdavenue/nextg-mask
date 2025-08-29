@@ -1,0 +1,70 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.features {
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: func.respond(md)) {
+    justify-content: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: func.toRem(31);
+
+    @media (max-width: func.respond(md)) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: func.respond(sm)) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.feature-item {
+  display: flex;
+  column-gap: func.toRem(20);
+  width: 100%;
+
+  @media (max-width: func.respond(md)) {
+    max-width: func.toRem(320);
+  }
+
+  @media (max-width: func.respond(xs)) {
+    flex-direction: column;
+    row-gap: func.toRem(16);
+  }
+
+  &--wide {
+    max-width: func.toRem(290);
+
+    @media (max-width: func.respond(md)) {
+      max-width: func.toRem(320);
+    }
+  }
+
+  &__cover {
+    margin-top: func.toRem(6);
+  }
+
+  &__title {
+    color: vars.$color-text-dark;
+    font-weight: 700;
+    font-size: func.toRem(20);
+    margin-bottom: func.toRem(15);
+    line-height: func.toRem(28);
+
+    @media (max-width: func.respond(xs)) {
+      word-break: break-word;
+    }
+  }
+
+  &__desc {
+    font-size: func.toRem(15);
+    line-height: func.toRem(22);
+  }
+}

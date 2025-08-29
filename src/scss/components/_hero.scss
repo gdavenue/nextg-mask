@@ -1,0 +1,92 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: func.toRem(140);
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: func.respond(sm)) {
+    flex-direction: column;
+    row-gap: func.toRem(60);
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: -14px;
+    width: 100%;
+
+    @media (max-width: func.respond(md)) {
+      max-width: func.toRem(680);
+    }
+  }
+
+  &__badge {
+    color: vars.$color-accent;
+    font-size: func.toRem(14);
+    font-family: vars.$font-accent;
+    font-weight: 500;
+    margin-bottom: func.toRem(20);
+  }
+
+  &__cover {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 496px;
+
+    @media (max-width: func.respond(sm)) {
+      max-width: 220px;
+    }
+  }
+
+  &__title {
+    color: vars.$color-text-dark;
+    font-family: vars.$font-accent;
+    font-size: func.toRem(72);
+    line-height: func.toRem(82);
+    font-weight: 700;
+    margin-bottom: func.toRem(24);
+
+    @media (max-width: func.respond(md)) {
+      font-size: func.toRem(54);
+      line-height: func.toRem(64);
+    }
+
+    @media (max-width: func.respond(sm)) {
+      font-size: func.toRem(48);
+      line-height: func.toRem(58);
+    }
+
+    @media (max-width: func.respond(xs)) {
+      font-size: func.toRem(42);
+      line-height: func.toRem(52);
+      word-break: break-word;
+    }
+  }
+
+  &__desc {
+    line-height: func.toRem(24);
+    margin-bottom: func.toRem(58);
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: func.toRem(20);
+
+    @media (max-width: func.respond(sm)) {
+      justify-content: center;
+    }
+
+    @media (max-width: func.respond(xs)) {
+      flex-direction: column;
+      row-gap: func.toRem(20);
+    }
+  }
+}

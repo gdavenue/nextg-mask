@@ -1,0 +1,33 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+	<div class="overlay"></div>
+	{% include "components/mobile-menu.njk" %}
+
+	{% set heroClass = "site__hero" %}
+	{% include "components/hero.njk" %}
+
+	{% set featuresClass = "site__features" %}
+	{% include "components/features.njk" %}
+
+	{% set aboutClass = "site__about" %}
+	{% include "components/about.njk" %}
+
+	{% set summaryClass = "site__summary" %}
+	{% include "components/summary.njk" %}
+
+	{% set partnersClass = "site__partners" %}
+	{% include "components/partners.njk" %}
+
+	{% set presentationClass = "site__presentation" %}
+	{% include "components/presentation.njk" %}
+
+	{% set testimonialsClass = "site__testimonials" %}
+	{% include "components/testimonials.njk" %}
+
+	{% set ctaClass = "site__cta" %}
+	{% include "components/cta.njk" %}
+
+	{% set contactsClass = "site__contacts" %}
+	{% include "components/contacts.njk" %}
+{% endblock %}

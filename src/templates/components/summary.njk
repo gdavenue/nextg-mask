@@ -1,0 +1,32 @@
+<section class="{{ summaryClass | default('') }} summary">
+	<div class="summary__container container">
+		<div class="summary__col summary__col--image">
+			<div class="summary__label">{{ summary.primary.text }}</div>
+		</div>
+		<div class="summary__col summary__col--content">
+			<div class="summary__row summary__row--2cols">
+				<div class="summary__content">{{ summary.col.primary.text }}</div>
+				<div class="summary__content summary__content--primary">{{ summary.col.secondary.text }}</div>
+			</div>
+			<div class="summary__row summary__row--full">
+				<h3 class="summary__title">{{ summary.contacts.title }}</h3>
+				<p class="summary__desc">{{ summary.contacts.desc }}</p>
+				<div class="summary__contact summary-contact">
+					<div>
+						<a href="#" class="button button--outline-primary">{{ summary.contacts.cta }}</a>
+					</div>
+					<div class="summary-contact__divider"></div>
+					<div class="summary-contact__item">
+						<div class="summary-contact__cover">
+							<i class="fa fa-phone summary-contact__icon" aria-hidden="true"></i>
+						</div>
+						<div>
+							<div class="summary-contact__label">{{ summary.contacts.label }}</div>
+							<div class="summary-contact__value">{{ summary.contacts.phone }}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

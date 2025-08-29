@@ -1,0 +1,19 @@
+<div class="{{ aboutClass | default('') }} about">
+	<div class="about__container container">
+		{% for item in about %}
+			<article class="about__item {% if loop.index is even %} about__item--reverse {% endif %}">
+				<div class="about__cover">
+					<img src="./images/{{ item.image }}.png" class="about__image" alt="">
+				</div>
+				<div class="about__content">
+					<h2 class="about__title">{{item.title}}</h2>
+					<div class="about__paragraphs">
+						{% for paragraph in item.paragraphs %}
+							<p class="about__text">{{ paragraph.text | safe }}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</div>

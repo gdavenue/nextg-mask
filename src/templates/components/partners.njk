@@ -1,0 +1,10 @@
+<section class="{{ partnersClass | default('') }} partners container">
+	<h2 class="partners__title">{{partners.title}}</h2>
+	<ul class="partners__list">
+		{% for item in partners.items %}
+			<li class="partners__item">
+				<img src="images/partners/{{item.logo}}.png" alt="">
+			</li>
+		{% endfor %}
+	</ul>
+</section>

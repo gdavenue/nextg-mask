@@ -1,0 +1,117 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.footer {
+  background-color: vars.$color-bg-footer;
+  padding: func.toRem(72) 0 func.toRem(32);
+  font-size: func.toRem(14);
+  min-height: func.toRem(50);
+  margin-top: auto;
+
+  &__logo {
+    margin-bottom: func.toRem(32);
+  }
+
+  &__menus {
+    display: flex;
+    justify-content: space-between;
+    column-gap: func.toRem(310);
+
+    @media (max-width: func.respond(md)) {
+      column-gap: func.toRem(140);
+      max-width: func.toRem(400);
+    }
+
+    @media (max-width: func.respond(xs)) {
+      flex-direction: column;
+      row-gap: func.toRem(32);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: func.toRem(70);
+
+    @media (max-width: func.respond(sm)) {
+      flex-direction: column;
+      row-gap: func.toRem(32);
+    }
+  }
+
+  &__info {
+    max-width: func.toRem(316);
+  }
+
+  &__headline {
+    color: vars.$color-text-dark;
+    font-size: func.toRem(20);
+    font-weight: 700;
+    margin-bottom: func.toRem(14);
+  }
+
+  &__copyright {
+    border: 1px solid vars.$color-border-footer;
+    padding-top: func.toRem(32);
+    text-align: center;
+  }
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: func.toRem(9);
+
+  &__link {
+    color: vars.$color-text-default;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: vars.$color-link-hover;
+    }
+  }
+}
+
+.footer-social {
+  &__container {
+    position: relative;
+  }
+
+  &__menu {
+    margin-left: func.toRem(32);
+
+    @media (max-width: func.respond(xs)) {
+      margin-left: 0;
+    }
+  }
+}
+
+.footer-social-decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: func.toRem(22);
+  height: 84%;
+  padding-bottom: func.toRem(8);
+
+  @media (max-width: func.respond(xs)) {
+    display: none;
+  }
+
+  &__item {
+    width: func.toRem(22);
+
+    &--top {
+      background-color: #c9d9ef;
+      height: 40%;
+    }
+    &--bottom {
+      background-color: #2867c6;
+      height: 60%;
+    }
+  }
+}

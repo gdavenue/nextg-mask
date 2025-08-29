@@ -1,0 +1,116 @@
+@use 'variables/index' as vars;
+@use 'functions' as func;
+
+.about {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &__cover {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 570px;
+
+    @media (max-width: func.respond(sm)) {
+      max-width: 220px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: func.toRem(80);
+
+    @media (max-width: func.respond(sm)) {
+      align-items: center;
+      row-gap: func.toRem(60);
+    }
+  }
+
+  &__content {
+    padding-top: func.toRem(10);
+    width: 100%;
+    max-width: 523px;
+    
+    @media (max-width: func.respond(sm)) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: vars.$color-text-dark;
+    font-family: vars.$font-accent;
+    font-weight: 700;
+    font-size: func.toRem(48);
+    line-height: func.toRem(50);
+    margin-bottom: func.toRem(26);
+
+    @media (max-width: func.respond(xs)) {
+      font-size: func.toRem(32);
+      line-height: func.toRem(34);
+      word-break: break-word;
+    }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: func.toRem(52);
+
+    @media (max-width: func.respond(sm)) {
+      flex-direction: column;
+      row-gap: func.toRem(20);
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      @media (max-width: func.respond(sm)) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__paragraphs {
+    display: flex;
+    flex-direction: column;
+    row-gap: func.toRem(26);
+  }
+
+  &__text {
+    line-height: func.toRem(30);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: func.toRem(-120);
+    left: func.toRem(-167);
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/arrow-right.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: func.toRem(-800);
+    right: func.toRem(-100);
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/arrow-left.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+}
